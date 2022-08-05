@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Tech News</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/public/stylesheets/style.css">
+=======
+    <link rel="stylesheet" href="stylesheets/style.css">
+>>>>>>> feature/single-post
 </head>
 
 <body>
@@ -15,7 +19,15 @@
                 <a href="/">Just Tech News</a>
             </h1>
             <nav>
+<<<<<<< HEAD
                 <a href="/login">login</a>
+=======
+                {{#if loggedIn}}
+                <button id="logout" class="btn-no-style">logout</button>
+                {{else}}
+                <a href="/login">login</a>
+                {{/if}}
+>>>>>>> feature/single-post
             </nav>
         </header>
         <main>
@@ -26,6 +38,9 @@
         </footer>
     </div>
 
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
